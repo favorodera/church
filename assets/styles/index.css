@@ -1,0 +1,17 @@
+@import '@unocss/reset/tailwind.css';
+
+body {
+  background-color: #FEFEFE;
+  font-family: "Archivo", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+#app {
+  width: clamp(15rem, 108rem, 100%);
+  flex: 1 1 auto; 
+}
