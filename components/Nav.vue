@@ -6,13 +6,13 @@
 
       <div class="w-max flex flex-col items-start">
 
-        <h1 class="font-serrat text-neutral900 text-xs tracking-[0.1125rem] font-extrabold line-height-[120%] sm:text-sm md:text-4.5">
+        <h1 class="font-serrat text-neutral900 text-xs tracking-[0.1125rem] font-extrabold leading-[120%] sm:text-sm md:text-4.5">
           GRACE OF GOD
         </h1>
 
         <div class="w-full flex items-center gap-1">
 
-          <h1 class="font-serrat text-neutral900 text-xs font-normal line-height-[120%] sm:text-sm md:text-4.5">
+          <h1 class="font-serrat text-neutral900 text-xs font-normal leading-[120%] sm:text-sm md:text-4.5">
             MISSION
           </h1>
 

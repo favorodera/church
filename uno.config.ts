@@ -16,6 +16,13 @@ export default defineConfig({
       neutral900: '#242220',
     },
   },
+  extendTheme: theme => ({
+    ...theme,
+    breakpoints: {
+      ...theme.breakpoints,
+      final: '1500px',
+    },
+  }),
   safelist: [
     // ...
   ],
