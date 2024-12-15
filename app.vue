@@ -1,6 +1,6 @@
 <template>
 
-  <main class="w-full flex flex-[1_1_auto] flex-col">
+  <main class="w-full flex flex-[1_1_auto] flex-col items-center">
 
     <Nav />
     <Hero />
@@ -12,6 +12,8 @@
     </div>
 
     <About />
+    <Schedule />
+    <Events />
 
   </main>
 

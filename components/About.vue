@@ -1,10 +1,18 @@
 <template>
 
-  <section class="w-full flex items-start justify-center px-4 pb-8 sm:px-12 sm:pb-12 md:px-16 md-pb-16 xl:px-[15.75rem] xl:pb-8xl">
+  <section
+    id="about"
+    class="max-w-[108rem] flex items-start justify-center px-4 pb-8 sm:px-12 sm:pb-12 md:px-16 md-pb-16 xl:px-[15.75rem] xl:pb-8xl"
+  >
 
     <div class="w-full flex flex-col items-start gap-6">
 
-      <h1 class="text-neutral900 font-bold leading-[150%] text-8">
+      <h1
+        :class="{
+          'animate-slide-in-left': isInView,
+        }"
+        class="text-neutral900 font-bold leading-[150%] text-8"
+      >
         About
       </h1>
 
@@ -13,12 +21,19 @@
         <div
           v-for="aboutCardItem in aboutCardItems"
           :key="aboutCardItem.title"
+          
           class="flex flex-col sm:flex-row gap-6 sm:flex-[1_1_28rem]"
         >
 
-          <div class="size-full aspect-ratio-video sm:size-32 shrink-0 rounded-lg overflow-clip">
+          <div
+            :class="{
+              'animate-zoom-in': isInView,
+            }"
+            class="h-full aspect-video sm:size-32 shrink-0 rounded-lg overflow-clip"
+          >
 
             <img
+              
               :src="aboutCardItem.image"
               :alt="aboutCardItem.title"
               class="size-full object-cover"
@@ -26,7 +41,12 @@
 
           </div>
 
-          <div class="w-full flex flex-col">
+          <div
+            :class="{
+              'animate-zoom-in': isInView,
+            }"
+            class="w-full flex flex-col animate-duration-1000"
+          >
 
             <h2 class="text-neutral900 font-bold leading-[150%] text-5.5 leading-[1.375rem]">
               {{ aboutCardItem.title }}
@@ -62,5 +82,15 @@ const aboutCardItems = ref([
     image: '/images/about-our-purpose.jpeg',
   },
 ])
+
+const isInView = ref(false)
+
+onMounted(() => {
+  const hero = document.getElementById('about')
+
+  if (hero) {
+    scrollAnimate(hero, isInView)
+  }
+})
 
 </script>

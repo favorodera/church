@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="w-full flex items-center justify-center px-4 py-8 sm:p-12 md:p-16 xl:px-[15.75rem]">
+  <nav class="w-full max-w-[108rem] flex items-center justify-center px-4 py-8 sm:p-12 md:p-16 xl:px-[15.75rem]">
 
     <div class="w-full flex items-center justify-between">
 

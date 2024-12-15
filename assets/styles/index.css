@@ -13,6 +13,6 @@ body {
 }
 
 #app {
-  width: clamp(15rem, 108rem, 100%);
-  flex: 1 1 auto; 
+  flex: 1 1 auto;
+  min-width: 100%; 
 }
