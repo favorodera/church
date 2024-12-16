@@ -16,7 +16,7 @@
         Weekly Schedule
       </h1>
 
-      <div class="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,24.5rem),1fr))] gap-6">
+      <div class="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,30rem),1fr))] gap-6">
 
         <div
           v-for="weeklyScheduleCardItem in weeklyScheduleCardItems"
@@ -27,12 +27,12 @@
           }"
         >
 
-          <div class="rounded-lg bg-neutral100 p-4 min-w-20 h-min shadow-xl">
+          <div class="rounded-lg bg-neutral100 p-4 min-w-40 h-min shadow-xl">
 
-            <p class="font-playfair text-5 font-bold leading-[170%] text-neutral900">
+            <p class="text-5 font-bold leading-[170%] text-neutral900">
               {{ weeklyScheduleCardItem.day }}
             </p>
-            <p class="font-playfair text-5 font-normal leading-[170%] text-neutral700">
+            <p class="text-5 font-normal leading-[170%] text-neutral700">
               {{ weeklyScheduleCardItem.time }}
             </p>
 
@@ -65,20 +65,20 @@
 const weeklyScheduleCardItems = ref([
   {
     title: 'SUNDAY SERVICE',
-    time: '09H',
-    day: 'SUN',
+    time: '8:00 AM',
+    day: 'SUNDAY',
     description: `A vibrant gathering for worship and fellowship.`,
   },
   {
     title: 'MID-WEEK SERVICE',
-    time: '18H',
-    day: 'THU',
+    time: '6:30 PM',
+    day: 'WEDNESDAY',
     description: `An opportunity for connection and spiritual enrichment.`,
   },
   {
     title: 'BIBLE STUDY',
-    time: '18H',
-    day: 'FRI',
+    time: '6:30 PM',
+    day: 'FRIDAY',
     description: `A session focused on deepening understanding of scripture.`,
   },
 ])

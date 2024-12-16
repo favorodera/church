@@ -14,6 +14,7 @@
     <About />
     <Schedule />
     <Events />
+    <Footer />
 
   </main>
 

@@ -16,12 +16,12 @@
         Events
       </h1>
   
-      <div class="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,37.5rem),1fr))] gap-6">
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,37.5rem),2fr))] gap-6">
   
         <div
           v-for="eventsCardItem in eventsCardItems"
           :key="eventsCardItem.title"
-          class="min-h-full flex flex-col sm:flex-row gap-6 rounded-lg"
+          class="flex flex-col sm:flex-row gap-6 rounded-lg "
           :class="{
             'animate-zoom-in': isInView,
           }"

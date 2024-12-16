@@ -39,18 +39,6 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        playfair: [
-          {
-            provider: 'google',
-            name: 'Playfair Display',
-            weights: ['400', '500', '600', '700', '800', '900'],
-            italic: true,
-          },
-          {
-            provider: 'none',
-            name: 'serif',
-          },
-        ],
         archivo: [
           {
             provider: 'google',
