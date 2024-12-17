@@ -16,7 +16,7 @@
         Events
       </h1>
   
-      <div class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,37.5rem),2fr))] gap-6">
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,37.5rem),1fr))] gap-6">
   
         <div
           v-for="eventsCardItem in eventsCardItems"
